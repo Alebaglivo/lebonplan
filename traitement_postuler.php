@@ -7,8 +7,8 @@ if (!isset($_SESSION['id'])) {
 
 $host = 'localhost';
 $dbname = 'stage';
-$username = 'root';
-$password = 'root';
+$username = 'webuser';
+$password = 'tresbonmdp';
 
 // Connexion à la BDD
 try {
