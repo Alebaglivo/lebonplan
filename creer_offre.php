@@ -5,8 +5,8 @@ $id_uti = $_SESSION['id_uti'];
 
 $host = "4.180.78.195";
 $dbname = "stage";
-$username = "root";
-$password = "root";
+$username = "webuser";
+$password = "tresbonmdp";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
