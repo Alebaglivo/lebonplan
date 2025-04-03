@@ -54,14 +54,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt = $pdo->prepare("INSERT INTO Etudiant (Id_etu, cv, majorité, permis, civilite, Id_uti) VALUES (?, ?, ?, ?, ?, ?)");
         $stmt->execute([$id_utilisateur, $cvContent, $majorite, $permis, $civilite, $id_utilisateur]);
 
-        // 🔐 Création de la session utilisateur
+        //  Création de la session utilisateur
         $_SESSION['id'] = $id_utilisateur;
         $_SESSION['nom'] = $nom;
         $_SESSION['prenom'] = $prenom;
         $_SESSION['email'] = $email;
         $_SESSION['role'] = $role;
 
-        // ✅ Affichage JS en console pour vérifier que la session est bien créée
+        //  Affichage JS en console pour vérifier que la session est bien créée
         echo "<script>console.log('Session ID: " . $_SESSION['id'] . "');</script>";
         echo "Inscription réussie !";
 
