@@ -40,9 +40,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     ':contenu' => $contenu,
                     ':id_ent' => $entreprise['Id_ent']
                 ]);
-                echo "<p style='color:green;text-align:center;'>✅ Annonce publiée avec succès ! Redirection...</p>";
-                header("Refresh:2; url=entreprise.php");
-                exit;
+               echo "<p style='color:green;text-align:center;'>✅ Annonce publiée avec succès ! Redirection dans 2 secondes...</p>";
+echo "<script>setTimeout(() => { window.location.href = 'entreprise.php'; }, 2000);</script>";
+exit;
+
             } catch (PDOException $e) {
                 echo "<p style='color:red;text-align:center;'>Erreur lors de la publication : " . $e->getMessage() . "</p>";
             }
