@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Page d'accueil administrateur">
+  <title>Accueil Administrateur</title>
+  <link rel="stylesheet" href="acceuil_admin.css">  <!-- Assure-toi d'avoir ton fichier CSS -->
+  <link rel="icon" href="./logo_chap.png">
+</head>
+<body>
+<header>
+  <div class="navbar">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">&#9776;</button>
+
+    <nav class="nav-items-container">
+      <ul class="main-menu" id="main-menu">
+        <li class="menu-item"><a href="accueil_admin.html" class="top-level-entry active">Accueil</a></li>
+        <li class="menu-item"><a href="gestion_utilisateurs.html" class="top-level-entry">Gestion des utilisateurs</a></li>
+        <li class="menu-item"><a href="gestion_offres.html" class="top-level-entry">Gestion des stages</a></li>
+      </ul>
+
+      <!-- Liens de Connexion et S'inscrire à droite -->
+      <div class="auth-links">
+        <a href="connexion.html" class="navitem">Se déconnecter</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="welcome-section">
+    <h1>Bienvenue Administrateur</h1>
+    <p>Vous êtes connecté en tant qu'administrateur. Utilisez le menu pour gérer les utilisateurs, les stages et bien plus encore.</p>
+    <script src="acceuil_admin.js"></script>
+    <section class="actions">
+      <h2>Actions disponibles</h2>
+      <ul>
+        <li><a href="gestion_utilisateurs.html">Gérer les utilisateurs</a></li>
+        <li><a href="gestion_offres.html">Gérer les offres</a></li>
+        <li><a href="rapports.html">Voir les rapports</a></li>
+      </ul>
+    </section>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <img src="logo_chap.png" alt="Logo gauche" class="footer-logo left">
+    <img src="logo_text.png" alt="Logo droit" class="footer-logo right">
+    <div class="footer-links">
+      <a href="coockies.html">Cookies</a>
+      <a href="faq.html">F.A.Q</a>
+      <a href="cgu.html">Conditions générales</a>
+      <a href="protection.html">Politique de protection des données</a><br> <br>
+      <a style='color:#ffffff; text-align:center;' href="https://www.google.fr/maps/place/Campus+CESI">Campus CESI</a>
+      <br> <br>
+    </div>
+  </div>
+
+  <br><br><br><br>
+  <div class="rounded-social-buttons">
+    <a class="social-button twitter" href="https://x.com/cesi_officiel?s=21" target="_blank"><i class="fa-brands fa-twitter"><img src="Twitter.png"></i></a>
+    <a class="social-button tiktok" href="https://www.tiktok.com/@bde_cesi_mtp?_t=ZN-8tezCXXQ3tO&_r=1" target="_blank"><i class="fa-brands fa-tiktok"><img src="tiktok.png"></i></a>
+    <a class="social-button instagram" href="https://www.instagram.com/bde.cesi.montpellier" target="_blank"><i class="fa-brands fa-instagram"><img src="instagram.png"></i></a>
+  </div>
+</footer>
+</body>
+
+</html>

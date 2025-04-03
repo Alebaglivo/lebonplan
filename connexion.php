@@ -1,11 +1,10 @@
  <?php
 session_start();
 
-$host = 'localhost';
-$dbname = 'stage';
-$username = 'root';
-$password = 'root';
-
+$host = "4.180.78.195";
+$dbname = "stage";
+$username = "webuser";
+$password = "tresbonmdp";
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -43,6 +42,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     break;
                 case 'pilote':
                     header("Location: accueil_etu.php");
+                    break;
+                case 'admin':
+                    header("Location: accueil_admin.php");
                     break;
                 default:
                     echo "Rôle inconnu.";

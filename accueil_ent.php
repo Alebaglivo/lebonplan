@@ -123,7 +123,7 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {
                     <li class="menu-item"><a href="accueil_ent.php" class="top-level-entry active">Accueil</a></li>
                     <li class="menu-item"><a href="contact_ent.html" class="top-level-entry">Contact</a></li>
                     <li class="menu-item"><a href="entreprise.php" class="top-level-entry">Entreprise</a></li>
-                    <li class="menu-item"><a href="offre_ent.html" class="top-level-entry">Offre</a></li>
+                    <li class="menu-item"><a href="offre_ent.php" class="top-level-entry">Offre</a></li>
                 </ul>
 
                 <!-- Liens de Connexion et S'inscrire à droite -->

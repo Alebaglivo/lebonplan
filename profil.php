@@ -2,10 +2,10 @@
 header('Content-Type: text/html; charset=utf-8');
 session_start();
 
-$host = "localhost";
+$host = "4.180.78.195";
 $dbname = "stage";
-$username = "root";
-$password = "root";
+$username = "webuser";
+$password = "tresbonmdp";
 
 if (!isset($_SESSION['id']) || !isset($_SESSION['role'])) {
     die("Erreur : utilisateur non connecté.");
@@ -58,17 +58,20 @@ if (isset($_GET['search'])) {
     ]);
     $annonces = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    if (count($annonces) > 0) {
-        foreach ($annonces as $annonce) {
-            echo '<div class="annonce">';
-            echo '  <div class="box">';
-            echo '    <h2 class="annonce-title">' . htmlspecialchars($annonce['titre']) . '</h2>';
-            echo '    <p class="annonce-description">Société : ' . htmlspecialchars($annonce['nom_ent']) . '</p>';
-            echo '    <button class="voir-offre-btn">Voir l\'offre</button>';
-            echo '  </div>';
-            echo '</div>';
-        }
-    } else {
+if (count($annonces) > 0) {
+    foreach ($annonces as $annonce) {
+        echo '<div class="annonce">';
+        echo '  <div class="box">';
+        echo '    <h2 class="annonce-title">' . htmlspecialchars($annonce['titre']) . '</h2>';
+        echo '    <p class="annonce-description">Société : ' . htmlspecialchars($annonce['nom_ent']) . '</p>';
+        echo '    <form action="postuler.php" method="get">';
+        echo '        <input type="hidden" name="id_ann" value="' . htmlspecialchars($annonce['Id_ann']) . '">';
+        echo '        <button type="submit" class="verifier-btn">Voir l\'offre</button>';
+        echo '    </form>';
+        echo '  </div>';
+        echo '</div>';
+    }
+} else {
         echo '<p>Aucune offre trouvée.</p>';
     }
     exit;
@@ -146,6 +149,9 @@ if (isset($_GET['search'])) {
       <a href="modifierprofil_etu.php">
         <button class="profile">Modifier mon profil</button>
       </a>
+      <a href="#" onclick="confirmerSuppression(); return false;">
+    	<button class="delete-profile" style="background-color: #d9534f;">Supprimer mon compte</button>
+      </a>
     </div>
   </section>
 </main>
@@ -222,6 +228,7 @@ if (isset($_GET['search'])) {
   </div>
 </footer>
 <script src="menu.js"></script> 
+<script src="supprimer_compte.js"></script> 
 </body>
 </html>
 

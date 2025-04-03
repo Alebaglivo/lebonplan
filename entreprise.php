@@ -2,12 +2,12 @@
 header('Content-Type: text/html; charset=utf-8');
 session_start();
 
-$host = "localhost";
+$host = "4.180.78.195";
 $dbname = "stage";
-$username = "root";
-$password = "root";
+$username = "webuser";
+$password = "tresbonmdp";
 
-// 🔐 Vérifie que l'utilisateur est bien connecté
+//  Vérifie que l'utilisateur est bien connecté
 // if (!isset($_SESSION['id']) || $_SESSION['role'] !== 'entreprise') {
 //     die("Erreur : accès réservé aux entreprises.");
 // }
@@ -88,6 +88,9 @@ $annonces = $stmtAnnonces->fetchAll(PDO::FETCH_ASSOC);
             <p>Siret de l'entreprise : <?= htmlspecialchars($entreprise['SIREN']) ?></p>
             <button class="offer"><a href="creer_annonce.php" style="color:white;">+ Créer une offre</a></button>
             <button class="profile"><a href="modifierprofil_ent.php" style="color:white;">Modifier mon profil</a></button>
+            <a href="#" onclick="confirmerSuppression(); return false;">
+    		<button class="delete-profile" style="background-color: #d9534f;">Supprimer mon compte</button>
+	    </a>
         </div>
     </section>
 
@@ -133,6 +136,7 @@ $annonces = $stmtAnnonces->fetchAll(PDO::FETCH_ASSOC);
   </div>
 </footer>
 <script src="menu.js"></script> 
+<script src="supprimer_compte.js"></script> 
 </body>
 </html>
 
