@@ -1,6 +1,5 @@
- <?php
+<?php
 session_start();
-
 $host = "4.180.78.195";
 $dbname = "stage";
 $username = "webuser";
