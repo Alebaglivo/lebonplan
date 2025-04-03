@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const formData = new FormData(form);
 
-        // 👉 Affichage dans la console du contenu du formulaire (clé + valeur)
+        //  Affichage dans la console du contenu du formulaire (clé + valeur)
         console.log("Formulaire soumis avec les données suivantes :");
         for (const [key, value] of formData.entries()) {
             console.log(`${key}: ${value}`);
