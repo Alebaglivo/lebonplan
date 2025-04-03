@@ -1,11 +1,8 @@
 <?php
 session_start();
 
-// ⚠️ Remplacer par la session utilisateur quand le système de login entreprise sera prêt
-// $_SESSION['id'] = ...;
-// $id_uti = $_SESSION['id'];
 
-// 🔧 Pour les tests, on simule un utilisateur entreprise avec un ID fixe
+//  Pour les tests, on simule un utilisateur entreprise avec un ID fixe
 $id_uti = $_SESSION['id'];
 
 // Connexion BDD
