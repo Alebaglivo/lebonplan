@@ -45,7 +45,7 @@ $candidatures = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <li class="menu-item"><a href="offre_ent.php" class="top-level-entry active">Offre</a></li>
       </ul>
       <div class="auth-links">
-        <a href="accueil.html" class="button">Déconnexion</a>
+        <a href="accueil.php" class="button">Déconnexion</a>
       </div>
     </nav>
   </div>
