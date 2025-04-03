@@ -73,7 +73,7 @@ $annonces = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <br>
 </header>
 
-<a href="creer_offre.php" class="create-offer-btn">+ Créer une offre</a>
+<a href="creer_annonce.php" class="create-offer-btn">+ Créer une offre</a>
 
 <main>
   <h2>Vos offres</h2>
