@@ -73,7 +73,7 @@ $annonces = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <br>
 </header>
 
-<a href="creer_offre.html" class="create-offer-btn">+ Créer une offre</a>
+<a href="creer_offre.php" class="create-offer-btn">+ Créer une offre</a>
 
 <main>
   <h2>Vos offres</h2>
@@ -102,7 +102,7 @@ $annonces = $stmt->fetchAll(PDO::FETCH_ASSOC);
       </div>
     <?php endforeach; ?>
   <?php else: ?>
-    <p style="text-align: center; font-size: 18px;">Aucune annonce trouvée pour cette entreprise.</p>
+    <p style="text-align: center; font-size: 18px;">Vous avez pas encore des annonces.</p>
   <?php endif; ?>
 </main>
 
