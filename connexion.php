@@ -37,12 +37,15 @@ echo "plutot ici";
 // Redirection selon le rôle
             switch ($utilisateur['role']) {
                 case 'etudiant':
+             echo "aucune idee frero";
                     header("Location: accueil_etu.php");
                     break;
                 case 'entreprise':
+             echo "moi non plus";
                     header("Location: accueil_ent.php");
                     break;
                 case 'pilote':
+             echo "non";
                     header("Location: accueil_etu.php");
                     break;
                 case 'admin':
