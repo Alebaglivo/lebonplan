@@ -3,8 +3,8 @@ header('Content-Type: text/html; charset=utf-8');
 
 $host = "4.180.78.195";
 $dbname = "stage";
-$username = "webuser";
-$password = "tresbonmdp";
+$username = "root";
+$password = "root";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
