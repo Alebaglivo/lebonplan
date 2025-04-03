@@ -217,9 +217,9 @@ if (count($annonces) > 0) {
     <div class="footer-column">
       <h3>Suivez-nous</h3>
       <div class="social-buttons">
-        <a href="https://x.com/cesi_officiel?s=21" target="_blank"><img src="./images/Twitter.png"></a>
-        <a href="https://www.tiktok.com/@bde_cesi_mtp" target="_blank"><img src="./images/tiktok.png"></a>
-        <a href="https://www.instagram.com/bde.cesi.montpellier" target="_blank"><img src="./images/instagram.png"></a>
+        <a href="https://x.com/cesi_officiel?s=21" target="_blank"><img src="Twitter.png"></a>
+        <a href="https://www.tiktok.com/@bde_cesi_mtp" target="_blank"><img src="tiktok.png"></a>
+        <a href="https://www.instagram.com/bde.cesi.montpellier" target="_blank"><img src="instagram.png"></a>
       </div>
     </div>
   </div>
