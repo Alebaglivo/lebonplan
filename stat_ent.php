@@ -2,10 +2,10 @@
 session_start();
 
 // Connexion BDD
-$host = "localhost";
+$host = "4.180.78.195";
 $dbname = "stage";
-$username = "root";
-$password = "root";
+$username = "webuser";
+$password = "tresbonmdp";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
@@ -72,7 +72,7 @@ $postulants = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <li class="menu-item"><a href="offre_ent.php" class="top-level-entry active">Offre</a></li>
       </ul>
       <div class="auth-links">
-        <a href="accueil.html" class="button">Déconnexion</a>
+        <a href="index.php" class="button">Déconnexion</a>
       </div>
     </nav>
   </div>

@@ -5,11 +5,10 @@ if (!isset($_SESSION['id'])) {
     die("Accès interdit : vous devez être connecté.");
 }
 
-$host = 'localhost';
-$dbname = 'stage';
-$username = 'webuser';
-$password = 'tresbonmdp';
-
+$host = "4.180.78.195";
+$dbname = "stage";
+$username = "webuser";
+$password = "tresbonmdp";
 // Connexion à la BDD
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);

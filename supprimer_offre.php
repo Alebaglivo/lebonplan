@@ -13,10 +13,10 @@ if (!isset($_GET['id_ann'])) {
 
 $id_ann = (int)$_GET['id_ann'];
 
-$host = "localhost";
+$host = "4.180.78.195";
 $dbname = "stage";
-$username = "root";
-$password = "root";
+$username = "webuser";
+$password = "tresbonmdp";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
