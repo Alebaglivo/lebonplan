@@ -1,5 +1,5 @@
 <script>
-    // 👇 Injecte le rôle depuis PHP dans JS
+    // Injecte le rôle depuis PHP dans JS
     const role = <?= json_encode($_SESSION['role'] ?? null) ?>;
 
     document.addEventListener("click", function (event) {
