@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    chargerAnnonces(); // ✅ Avec le "r"
+    chargerAnnonces(); //  Avec le "r"
 });
 
 
