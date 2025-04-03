@@ -131,7 +131,7 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {
   function rechercherOffres() {
       const input = document.getElementById("search-input").value.trim();
 
-      // 👉 Si le champ est vide, on efface les résultats et on sort
+      //  Si le champ est vide, on efface les résultats et on sort
       if (input === "") {
           document.getElementById("annonces-container").innerHTML = "";
           return;
