@@ -12,7 +12,7 @@ $password = "tresbonmdp";
 //     die("Erreur : accès réservé aux entreprises.");
 // }
 
-// 🔧 ID temporaire statique pour tests
+//  ID temporaire statique pour tests
 $id_utilisateur = $_SESSION['id'];
 
 try {
